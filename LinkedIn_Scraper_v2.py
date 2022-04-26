@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
-
-
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
@@ -11,9 +8,6 @@ import pandas as pd
 import re
 import requests
 
-
-
-# In[73]:
 
 
 def LinkedIn_login():
@@ -49,11 +43,6 @@ def LinkedIn_login():
     
   
 
-
-
-
-
-
 class profile_scrape (object):
     
     """
@@ -84,8 +73,7 @@ class profile_scrape (object):
         
         self.soup  = BeautifulSoup(self.src_html, 'html.parser') # 'lxml', "html.parser"
         
-        
-        
+               
     
     def scroll_down(self):
         
@@ -166,9 +154,7 @@ class profile_scrape (object):
             self.exp_items = self.exps.find_all("div",{"class":"pvs-entity pvs-entity--padded pvs-list__item--no-padding-when-nested"})
     
     
-    def case_1_scraper(self):
-        
-        
+    def case_1_scraper(self):       
         
         self.output_list = []
         
@@ -329,7 +315,6 @@ class profile_scrape (object):
         #df_output = df_output[["user_id","company","position","start_year","end_year"]]
 
         return df_output
-
                     
     
     #############################################
@@ -473,9 +458,8 @@ class profile_scrape (object):
         return df_output
     
  
-#if __name__ == "__main__":
 if __name__ == "__main__":
-    print("xxx")
+    print("....")
     
     
     
