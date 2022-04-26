@@ -12,11 +12,8 @@ import requests
 
 def LinkedIn_login():
     
-    username = "ssirasoni13@gmail.com"
-    pword = "1730_Libertylane"
-    
-    #self.username = input("Insert your LinkedIn email account: ")
-    #self.pword = input("Insert your Linkedin password: ")
+    username = "xxxx"
+    pword = "xxxx"
     
     driver = webdriver.Chrome("chromedriver")
     
